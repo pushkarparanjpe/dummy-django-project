@@ -18,3 +18,5 @@ DATABASES = {
         'PASSWORD': DB_PASSWORD,
     }
 }
+
+ALLOWED_HOSTS = ['*']  # TODO : WARNING - change this to your domain/sub-domain in prod!
