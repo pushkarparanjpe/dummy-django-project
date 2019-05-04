@@ -1,0 +1,20 @@
+[
+  {
+    "model": "helloapp.message",
+    "pk": 1,
+    "fields": {
+      "subject": "App not responding",
+      "body": "After 10minutes of usage - app stops responding",
+      "datetime_received": "2019-05-04T05:01:30.499Z"
+    }
+  },
+  {
+    "model": "helloapp.message",
+    "pk": 2,
+    "fields": {
+      "subject": "Color changes",
+      "body": "Can the background color be configured?",
+      "datetime_received": "2019-05-04T05:02:16.650Z"
+    }
+  }
+]

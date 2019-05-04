@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Django</title>
+    <link rel="stylesheet" href="{% static 'helloapp/css/style.css' %}">
+</head>
+<body>
+<h1>Messages:</h1>
+<table>
+    <tr>
+        <th>#</th><th>Subject</th><th>Message</th><th>DateTime</th>
+    </tr>
+    {% for mssg in  messages %}
+        <tr>
+            <td>{{ forloop.counter }}.</td>
+            <td>{{ mssg.subject }}</td>
+            <td>{{ mssg.body }}</td>
+            <td>{{ mssg.datetime_received }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
